@@ -1,3 +1,5 @@
+## strainsapi-client
+
 ```js
 
 import StrainsClient from 'strainsapi-client';
