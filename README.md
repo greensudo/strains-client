@@ -2,7 +2,7 @@
 
 import StrainsApiClient from 'strainsapi-client';
 
-const client = new StrainsApiClient('key');
+const client = new StrainsApiClient('API_KEY');
 
 // Fetch all strains
 client.getAllStrains();
