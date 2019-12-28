@@ -19,7 +19,7 @@ client.getStrainDetails(id);
 ```
 
 ### Effects
-```json
+```javascript
 {effect: "Relaxed", type: "positive"}
 {effect: "Dizzy", type: "negative"}
 {effect: "Hungry", type: "positive"}
