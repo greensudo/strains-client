@@ -1,19 +1,56 @@
 ```js
 
-import StrainsApiClient from 'strainsapi-client';
+import StrainsClient from 'strainsapi-client';
 
-const client = new StrainsApiClient('key');
+const client = new StrainsClient('API_KEY');
 
 // Fetch all strains
-client.getAllStrains();
+client.getStrains();
 
-// Fetch strains by race
+// Fetch strains by race (sative, indica, hybrid)
 client.getStrainsByRace('indica');
 
 // Fetch strains by effect
 client.getStrainsByEffect('Creative');
 
-// Fetch strain details
+// Fetch strain details pass id for strain
 client.getStrainDetails(id);
 
+```
+
+### Effects
+```json
+{effect: "Relaxed", type: "positive"}
+{effect: "Dizzy", type: "negative"}
+{effect: "Hungry", type: "positive"}
+{effect: "Euphoric", type: "positive"}
+{effect: "Happy", type: "positive"}
+{effect: "Depression", type: "medical"}
+{effect: "Insomnia", type: "medical"}
+{effect: "Pain", type: "medical"}
+{effect: "Stress", type: "medical"}
+{effect: "Cramps", type: "medical"}
+{effect: "Creative", type: "positive"}
+{effect: "Energetic", type: "positive"}
+{effect: "Talkative", type: "positive"}
+{effect: "Lack of Appetite", type: "medical"}
+{effect: "Nausea", type: "medical"}
+{effect: "Dry Mouth", type: "negative"}
+{effect: "Headache", type: "medical"}
+{effect: "Uplifted", type: "positive"}
+{effect: "Tingly", type: "positive"}
+{effect: "Paranoid", type: "negative"}
+{effect: "Sleepy", type: "positive"}
+{effect: "Fatigue", type: "medical"}
+{effect: "Headaches", type: "medical"}
+{effect: "Dry Eyes", type: "negative"}
+{effect: "Focused", type: "positive"}
+{effect: "Eye Pressure", type: "medical"}
+{effect: "Anxious", type: "negative"}
+{effect: "Giggly", type: "positive"}
+{effect: "Aroused", type: "positive"}
+{effect: "Inflammation", type: "medical"}
+{effect: "Spasticity", type: "medical"}
+{effect: "Seizures", type: "medical"}
+{effect: "Muscle Spasms", type: "medical"}
 ```
