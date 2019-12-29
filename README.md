@@ -1,5 +1,10 @@
 ## strainsapi-client
 
+### Install
+```sh
+npm i strainapi-client
+```
+
 ```js
 
 import StrainsClient from 'strainsapi-client';
