@@ -1,8 +1,11 @@
 ## strainsapi-client
 
+[![NPM Version](http://img.shields.io/npm/v/strainsapi-client.svg?style=flat)](https://npmjs.org/package/strainsapi-client)
+[![Downloads Per Month](https://img.shields.io/npm/dm/strainsapi-client.svg)](https://npmjs.org/package/strainsapi-client)
+
 ### Install
 ```sh
-npm i strainsapi-client
+npm install strainsapi-client
 ```
 
 ```js
