@@ -1,16 +1,16 @@
-## strainsapi-client
+## strains-client
 
-[![NPM Version](http://img.shields.io/npm/v/strainsapi-client.svg?style=flat)](https://npmjs.org/package/strainsapi-client)
-[![Downloads Per Month](https://img.shields.io/npm/dm/strainsapi-client.svg)](https://npmjs.org/package/strainsapi-client)
+[![NPM Version](http://img.shields.io/npm/v/strains-client.svg?style=flat)](https://npmjs.org/package/strains-client)
+[![Downloads Per Month](https://img.shields.io/npm/dm/strains-client.svg)](https://npmjs.org/package/strains-client)
 
 ### Install
 ```sh
-npm install strainsapi-client
+npm install strains-client
 ```
 
 ```js
 
-import StrainsClient from 'strainsapi-client';
+import StrainsClient from 'strains-client';
 
 const client = new StrainsClient('API_KEY');
 

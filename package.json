@@ -1,11 +1,16 @@
 {
-  "name": "strainsapi-client",
+  "name": "strains-client",
   "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "git@github.com:greensudo/strains-api-client.git"
   },
   "description": "client-side API client for https://strains.evanbusse.com/",
+  "keywords": [
+    "cannabis",
+    "strains",
+    "api-client"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
