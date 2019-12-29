@@ -9,11 +9,14 @@ const client = new StrainsClient('API_KEY');
 // Fetch all strains
 client.getStrains();
 
-// Fetch strains by race (sative, indica, hybrid)
+// Fetch strains by race (sativa, indica, hybrid)
 client.getStrainsByRace('indica');
 
 // Fetch strains by effect
 client.getStrainsByEffect('Creative');
+
+// Fetch strains by flavor
+client.getAllStrainFlavors();
 
 // Fetch strain details pass id for strain
 client.getStrainDetails(id);
@@ -55,4 +58,56 @@ client.getStrainDetails(id);
 {effect: "Spasticity", type: "medical"}
 {effect: "Seizures", type: "medical"}
 {effect: "Muscle Spasms", type: "medical"}
+```
+
+### Flavors
+```
+"Earthy"
+"Chemical"
+"Pine"
+"Spicy/Herbal"
+"Pungent"
+"Pepper"
+"Flowery"
+"Citrus"
+"Orange"
+"Sweet"
+"Skunk"
+"Grape"
+"Minty"
+"Woody"
+"Cheese"
+"Diesel"
+"Tropical"
+"Grapefruit"
+"Nutty"
+"Lemon"
+"Berry"
+"Blueberry"
+"Ammonia"
+"Apple"
+"Rose"
+"Butter"
+"Honey"
+"Tea"
+"Lime"
+"Lavender"
+"Strawberry"
+"Mint"
+"Chestnut"
+"Tree Fruit"
+"Pear"
+"Apricot"
+"Peach"
+"Blue Cheese"
+"Menthol"
+"Coffee"
+"Tar"
+"Mango"
+"Pineapple"
+"Sage"
+"Vanilla"
+"Plum"
+"Tobacco"
+"Violet"
 ```
