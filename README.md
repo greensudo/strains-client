@@ -2,7 +2,7 @@
 
 ### Install
 ```sh
-npm i strainapi-client
+npm i strainsapi-client
 ```
 
 ```js

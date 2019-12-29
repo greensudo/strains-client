@@ -1,6 +1,10 @@
 {
   "name": "strainsapi-client",
-  "version": "1.1.0",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:greensudo/strains-api-client.git"
+  },
   "description": "client-side API client for https://strains.evanbusse.com/",
   "main": "index.js",
   "scripts": {
@@ -8,5 +12,10 @@
   },
   "author": "@greensudo <greensudodev@gmail.com>",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4"
+  }
 }
