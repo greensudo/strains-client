@@ -1,10 +1,10 @@
-const StrainsClient = class {
+class StrainsClient {
     constructor(key) {
         this.key = key;
         this.apiBaseUri = `http://strainapi.evanbusse.com/${key}/`;
     }
 
-    getStrains = async () => {
+    static getStrains = () => {
         const uri = `${this.apiBaseUri}strains/search/all`;
 
         const response = fetch(uri)
@@ -14,7 +14,7 @@ const StrainsClient = class {
         return response;
     }
 
-    getStrainsByRace = async (race) => {
+    static getStrainsByRace = async (race) => {
         const uri = `${this.apiBaseUri}strains/search/race/${race}`;
 
         const response = await fetch(uri)
@@ -63,7 +63,7 @@ const StrainsClient = class {
         return response;      
     }
 
-    getStrainDetails = async (id) => {
+    static getStrainDetails = (id) => {
         const description = this.getStrainDescription(id);
         const flavors = this.getStrainFlavor(id);
         const effects = this.getStrainEffects(id);       
@@ -77,7 +77,7 @@ const StrainsClient = class {
         return strainDetails;
     }
 
-    getEffects = async () => {
+    static getEffects = () => {
         const uri = `${this.apiBaseUri}searchdata/effects`;
 
         const response = fetch(uri)
@@ -87,7 +87,7 @@ const StrainsClient = class {
         return response;
     }
 
-    getFlavors = async () => {
+    static getFlavors = () => {
         const uri = `${this.apiBaseUri}searchdata/flavors`;
 
         const response = fetch(uri)
