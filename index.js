@@ -1,4 +1,4 @@
-export default class StrainsClient {
+const StrainsClient = class {
     constructor(key) {
         this.key = key;
         this.apiBaseUri = `http://strainapi.evanbusse.com/${key}/`;
@@ -9,20 +9,23 @@ export default class StrainsClient {
 
         const response = fetch(uri)
             .then((res) => res.json())
-            .then(data => console.log('strains:', data))
+            .then(data => data)
             .catch(err => console.error(err.message));
         return response;
     }
 
     getStrainsByRace = async (race) => {
         const uri = `${this.apiBaseUri}strains/search/race/${race}`;
-        const response = await fetch(uri);
-        console.log('getStrainsByRace response:', response.json());
-        return response.json();
+
+        const response = await fetch(uri)
+            .then(res => res.json())
+            .then(data => data);
+        return response;
     }
 
     getStrainsByEffect = async (effect) => {
         const uri = `${this.apiBaseUri}strains/search/effect/${effect}`;
+
         const response = await fetch(uri)
         .then(res => res.json())
         .then(data => data)
@@ -61,7 +64,6 @@ export default class StrainsClient {
     }
 
     getStrainDetails = async (id) => {
-        console.log('getStrainDeets');
         const description = this.getStrainDescription(id);
         const flavors = this.getStrainFlavor(id);
         const effects = this.getStrainEffects(id);       
@@ -77,6 +79,7 @@ export default class StrainsClient {
 
     getEffects = async () => {
         const uri = `${this.apiBaseUri}searchdata/effects`;
+
         const response = fetch(uri)
             .then(res => res.json())
             .then(data => data)
@@ -86,11 +89,13 @@ export default class StrainsClient {
 
     getFlavors = async () => {
         const uri = `${this.apiBaseUri}searchdata/flavors`;
+
         const response = fetch(uri)
             .then(res => res.json())
             .then(data => data)
             .catch(err => console.error(err.message));
-            console.log('response:', response);
         return response;
     }
 }
+
+export default StrainsClient;
