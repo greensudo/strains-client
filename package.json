@@ -8,8 +8,7 @@
   "description": "client-side API client for https://strains.evanbusse.com/",
   "keywords": [
     "cannabis",
-    "strains",
-    "api-client"
+    "strains"
   ],
   "main": "index.js",
   "scripts": {
