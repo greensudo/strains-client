@@ -17,7 +17,7 @@ class StrainsClient {
     static getStrainsByRace(race) {
         const uri = `${this.apiBaseUri}strains/search/race/${race}`;
 
-        const response = await fetch(uri)
+        const response = fetch(uri)
             .then(res => res.json())
             .then(data => data);
         return response;
@@ -26,27 +26,27 @@ class StrainsClient {
     static getStrainsByEffect(effect) {
         const uri = `${this.apiBaseUri}strains/search/effect/${effect}`;
 
-        const response = await fetch(uri)
+        const response = fetch(uri)
         .then(res => res.json())
         .then(data => data)
         .catch(err => console.error(err.message));
         return response.json();
     }
 
-    getStrainDescription = async (id) => {
+    getStrainDescription = (id) => {
         const uri = `${this.apiBaseUri}strains/data/desc/${id}`;
 
-        const response = await fetch(uri)
+        const response = fetch(uri)
             .then(res => res.json())
             .then(data => data.desc)
             .catch(err => console.error(err.message));
         return response;
     }
 
-    getStrainFlavor = async (id) => {
+    getStrainFlavor = (id) => {
         const uri = `${this.apiBaseUri}strains/data/flavors/${id}`;
        
-        const response = await fetch(uri)
+        const response = fetch(uri)
             .then(res => res.json())
             .then(data => data)
             .catch(err => console.error(err.message));
@@ -56,7 +56,7 @@ class StrainsClient {
     getStrainEffects(id) {
         const uri = `${this.apiBaseUri}strains/data/effects/${id}`;
        
-        const response = await fetch(uri)
+        const response = fetch(uri)
             .then(res => res.json())
             .then(data => data)
             .catch(err => console.error(err.message));
