@@ -1,0 +1,32 @@
+{
+  "name": "strains-client",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:greensudo/strains-api-client.git"
+  },
+  "description": "client-side API client for https://strains.evanbusse.com/",
+  "keywords": [
+    "cannabis",
+    "strains"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@greensudo <greensudodev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.7.7"
+  },
+  "babel": {
+        "presets": [
+          "@babel/preset-env"
+        ],
+        "plugins": [
+            "@babel/plugin-proposal-class-properties"
+        ]
+    }
+}
